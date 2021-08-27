@@ -1,0 +1,23 @@
+{
+  "name": "mev-bundles-flashbots",
+  "version": "1.0.0",
+  "description": "send MEV bundles using flashbots ethers.js provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanishqjasoria/mev-bundles-flashbots.git"
+  },
+  "author": "Tanishq Jasoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanishqjasoria/mev-bundles-flashbots/issues"
+  },
+  "homepage": "https://github.com/tanishqjasoria/mev-bundles-flashbots#readme",
+  "dependencies": {
+    "@flashbots/ethers-provider-bundle": "^0.4.1",
+    "ethers": "^5.4.5"
+  }
+}
