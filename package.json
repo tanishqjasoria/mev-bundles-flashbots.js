@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/tanishqjasoria/mev-bundles-flashbots#readme",
   "dependencies": {
-    "@flashbots/ethers-provider-bundle": "^0.4.1",
+    "@flashbots/ethers-provider-bundle": "https://github.com/lmanini/ethers-provider-flashbots-bundle",
     "ethers": "^5.4.5"
   }
 }

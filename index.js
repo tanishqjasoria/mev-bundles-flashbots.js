@@ -7,11 +7,12 @@ const authSigner = new ethers.Wallet(config.authSigner_private_key)
 
 const signer = new ethers.Wallet(config.wallet_private_key)
 const transaction =  {
-    to: "0x368c3FBB093C385C5d2Eb50726AB7a0e212B3a77",
-    gasPrice: 100,
-    gasLimit: 33000,
+    to: "0x38d31a5c839fdcf1202fbb3a1347b4fea35c694d",
+    gasPrice: 2000000000,
+    gasLimit: 21000,
     chainId: 5,
-    value: 0,
+    value: 100,
+    nonce:40,
 }
 
 
@@ -32,11 +33,9 @@ const sendTestBundle = async function(provider, authSigner, wallet, transaction)
     // creation bundle with multiple transaction to handle the gas spent in a bundle > 42000
     const signedTransactions = await flashbotsProvider.signBundle([
         txn_object,
-        txn_object,
-        txn_object,
-        txn_object
     ]);
-    
+    console.log(signedTransactions)
+
     const currentBlockNumber = await provider.getBlockNumber();
 
     const simulation = await flashbotsProvider.simulate(
